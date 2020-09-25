@@ -24,32 +24,32 @@ before:
 
 steps:
 # Step 1: INTERNAL COMMENT DESCRIBING STEP 
-- title: # the title of the step, shown to the learner in the course progress page
-  description: # a description of the step, shown to the learner in the course progress page
+- title: Add Docker source code # the title of the step, shown to the learner in the course progress page
+  description: This is the code that Pull Dog will deploy to the temporary environments. # a description of the step, shown to the learner in the course progress page
   event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 2: INTERNAL COMMENT FOR STEP 2
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+- title: Install Pull Dog # the title of the step, shown to the learner in the course progress page
+ description: Here we'll install the Pull Dog app to the repository. # a description of the step, shown to the learner in the course progress page
+ event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+ actions: # a list of the actions that will occur when the step is triggered by an event
+ - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 3: INTERNAL COMMENT FOR STEP 3
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+- title: Create a pull request # the title of the step, shown to the learner in the course progress page
+ description: This triggers the automatic provisioning of an environment for that particular change in the pull request. # a description of the step, shown to the learner in the course progress page
+ event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+ actions: # a list of the actions that will occur when the step is triggered by an event
+ - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 4: INTERNAL COMMENT FOR STEP 4
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-#  actions: # a list of the actions that will occur when the step is triggered by an event
-#  - type: # the type of action, full list at https://lab.github.com/docs/actions
+- title: Merge the pull request # the title of the step, shown to the learner in the course progress page
+ description: This kills the temporary test environment. # a description of the step, shown to the learner in the course progress page
+ event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+ actions: # a list of the actions that will occur when the step is triggered by an event
+ - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 5: INTERNAL COMMENT FOR STEP 5
 # - title: # the title of the step, shown to the learner in the course progress page
